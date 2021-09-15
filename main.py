@@ -30,7 +30,7 @@ def take_command():
 
 
 def run_command():
-    cmd = "what's the time mate?"
+    cmd = take_command()
     if 'play' in cmd:
         music = cmd.replace('play', '')
         talk('talking'+cmd)

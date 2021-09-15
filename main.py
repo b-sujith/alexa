@@ -30,13 +30,13 @@ def take_command():
 
 
 def run_command():
-    cmd = take_command()
+    cmd = "what's the time mate?"
     if 'play' in cmd:
         music = cmd.replace('play', '')
         talk('talking'+cmd)
         pywhatkit.playonyt(music)
     elif 'time' in cmd:
-        current_time = dt.datetime.now().strftime('%I:%M:%p')
+        current_time = dt.datetime.now().strftime('%I:%M%p')
         talk(current_time)
 
 
